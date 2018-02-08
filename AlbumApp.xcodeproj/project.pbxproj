@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		362AB9701F81F58A007629FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AB96F1F81F58A007629FF /* AppDelegate.swift */; };
 		362AB9721F81F58A007629FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AB9711F81F58A007629FF /* ViewController.swift */; };
-		362AB9751F81F58A007629FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362AB9731F81F58A007629FF /* Main.storyboard */; };
 		362AB9771F81F58A007629FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362AB9761F81F58A007629FF /* Assets.xcassets */; };
 		362AB97A1F81F58A007629FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362AB9781F81F58A007629FF /* LaunchScreen.storyboard */; };
+		362AB9821F81F5D9007629FF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362AB9811F81F5D9007629FF /* Extensions.swift */; };
+		BAA9604D202CC5390075AF86 /* ImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9604C202CC5390075AF86 /* ImagesCell.swift */; };
+		BAA9604F202CC5800075AF86 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9604E202CC5800075AF86 /* AlbumsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		362AB96C1F81F589007629FF /* AlbumApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362AB96F1F81F58A007629FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		362AB9711F81F58A007629FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		362AB9741F81F58A007629FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		362AB9761F81F58A007629FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362AB9791F81F58A007629FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		362AB97B1F81F58A007629FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362AB9811F81F5D9007629FF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BAA9604C202CC5390075AF86 /* ImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCell.swift; sourceTree = "<group>"; };
+		BAA9604E202CC5800075AF86 /* AlbumsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 		362AB96E1F81F58A007629FF /* AlbumApp */ = {
 			isa = PBXGroup;
 			children = (
+				362AB9811F81F5D9007629FF /* Extensions.swift */,
 				362AB96F1F81F58A007629FF /* AppDelegate.swift */,
 				362AB9711F81F58A007629FF /* ViewController.swift */,
-				362AB9731F81F58A007629FF /* Main.storyboard */,
+				BAA9604C202CC5390075AF86 /* ImagesCell.swift */,
+				BAA9604E202CC5800075AF86 /* AlbumsCell.swift */,
 				362AB9761F81F58A007629FF /* Assets.xcassets */,
 				362AB9781F81F58A007629FF /* LaunchScreen.storyboard */,
 				362AB97B1F81F58A007629FF /* Info.plist */,
@@ -91,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Pavel Bogart";
 				TargetAttributes = {
 					362AB96B1F81F589007629FF = {
@@ -125,7 +131,6 @@
 			files = (
 				362AB97A1F81F58A007629FF /* LaunchScreen.storyboard in Resources */,
 				362AB9771F81F58A007629FF /* Assets.xcassets in Resources */,
-				362AB9751F81F58A007629FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA9604F202CC5800075AF86 /* AlbumsCell.swift in Sources */,
 				362AB9721F81F58A007629FF /* ViewController.swift in Sources */,
+				BAA9604D202CC5390075AF86 /* ImagesCell.swift in Sources */,
+				362AB9821F81F5D9007629FF /* Extensions.swift in Sources */,
 				362AB9701F81F58A007629FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +152,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		362AB9731F81F58A007629FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				362AB9741F81F58A007629FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		362AB9781F81F58A007629FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -177,6 +177,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +185,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +236,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +244,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -265,6 +269,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
